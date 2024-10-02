@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DigiPetsBackEnd")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17b5ebe18958ee165bf480bba4c34d6240b77d0a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de1d05413cfca086a07e8adbdb86ef9d21ea0252")]
 [assembly: System.Reflection.AssemblyProductAttribute("DigiPetsBackEnd")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DigiPetsBackEnd")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

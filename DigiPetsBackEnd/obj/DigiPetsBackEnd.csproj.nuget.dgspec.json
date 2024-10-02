@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\16167\\source\\repos\\DigiPetsBackEnd\\DigiPetsBackEnd\\DigiPetsBackEnd.csproj": {}
+    "C:\\Users\\Wren\\source\\grandcircus\\digipets\\DigiPetsBackEnd\\DigiPetsBackEnd\\DigiPetsBackEnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\16167\\source\\repos\\DigiPetsBackEnd\\DigiPetsBackEnd\\DigiPetsBackEnd.csproj": {
+    "C:\\Users\\Wren\\source\\grandcircus\\digipets\\DigiPetsBackEnd\\DigiPetsBackEnd\\DigiPetsBackEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\16167\\source\\repos\\DigiPetsBackEnd\\DigiPetsBackEnd\\DigiPetsBackEnd.csproj",
+        "projectUniqueName": "C:\\Users\\Wren\\source\\grandcircus\\digipets\\DigiPetsBackEnd\\DigiPetsBackEnd\\DigiPetsBackEnd.csproj",
         "projectName": "DigiPetsBackEnd",
-        "projectPath": "C:\\Users\\16167\\source\\repos\\DigiPetsBackEnd\\DigiPetsBackEnd\\DigiPetsBackEnd.csproj",
-        "packagesPath": "C:\\Users\\16167\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\16167\\source\\repos\\DigiPetsBackEnd\\DigiPetsBackEnd\\obj\\",
+        "projectPath": "C:\\Users\\Wren\\source\\grandcircus\\digipets\\DigiPetsBackEnd\\DigiPetsBackEnd\\DigiPetsBackEnd.csproj",
+        "packagesPath": "C:\\Users\\Wren\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Wren\\source\\grandcircus\\digipets\\DigiPetsBackEnd\\DigiPetsBackEnd\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Users\\Wren\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\16167\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Wren\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Wren\\AppData\\Roaming\\NuGet\\config\\Godot.Offline.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -46,6 +50,20 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -70,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
