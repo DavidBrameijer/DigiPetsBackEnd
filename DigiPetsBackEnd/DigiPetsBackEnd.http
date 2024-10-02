@@ -1,0 +1,6 @@
+@DigiPetsBackEnd_HostAddress = http://localhost:5078
+
+GET {{DigiPetsBackEnd_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
