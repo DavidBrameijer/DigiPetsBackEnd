@@ -113,7 +113,10 @@ namespace DigiPetsBackEnd.Controllers
 			{
 				if (!await accounts.AccountOwnsPet(apiKey, myPet))
 					return Forbid();
-
+				if (myPet.Health < .2m || opponentPet.Health < .2m)
+				{
+					return Forbid("One or more pets are below 20% health.");
+				}
 				double myAP = random.NextDouble() * (double)(myPet.Health ?? 0) * (myPet.Strength ?? 0) * (myPet.Experience ?? 0);
 				double opponentAP = random.NextDouble() * (double)(opponentPet.Health ?? 0) * (opponentPet.Strength ?? 0) * (opponentPet.Experience ?? 0);
 				bool result = myAP > opponentAP;
@@ -121,8 +124,8 @@ namespace DigiPetsBackEnd.Controllers
 				double opponentDamagePerc = opponentAP / (opponentAP + myAP);
 				myPet.Health *= (decimal)(1.0 - opponentDamagePerc);
 				opponentPet.Health *= (decimal)(1.0 - myDamagePerc);
-				myPet.Experience++;
-				opponentPet.Experience++;
+				myPet.Experience += ((opponentPet.Strength ?? 0) * (opponentPet.Experience ?? 0));
+				opponentPet.Experience += ((myPet.Strength ?? 0) * (myPet.Experience ?? 0));
 				BattleResult battleResult = new BattleResult();
 				battleResult.Pet = myPet;
 				battleResult.Opponent = opponentPet;
